@@ -1,3 +1,4 @@
+package javaBasics;
 
 public class FirstTest {
 
