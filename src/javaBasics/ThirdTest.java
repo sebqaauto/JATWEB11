@@ -24,12 +24,14 @@ public class ThirdTest {
 	static double piValue2 = 3.1466666666898736272783948462687288234;// up to 16 decimals 
 	
 	static int break_1;
+	static String str;
 	
 	// Naming convention gives the clue 
 	// If a keyword is completely in lower case it could be primitive 
 	// If a keyword begins with a upper case letter then, it could be class type 
 	
 	public static void main(String[] arr) {
+		
 		System.out.println("Weekend batch -- Java");
 		// keyword identifier  - type of the variable followed name of the variable 
 		// variableType <variable name> = value;
