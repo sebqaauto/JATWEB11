@@ -4,8 +4,11 @@ public class MultiDimensionalArray {
 		
 	static int [][] arr = new int [2][3];
 	int arr1[] = {1,2,3,4};
-	static String [][] studentInfo = new String[][] {{"Name", "Dept", "City"}, {"Rahul", "ECE", "Dehli"},{"Dhoni", "EEE", "Chennai"}, {"Pant", "MECH", "Mumbai"}};
-	//{"Rahul", "ECE", "Dehli"}
+	static String [][] studentInfo = new String[][] 
+	{{"Name", "Dept", "City"}, 
+	{"Rahul", "ECE", "Dehli"},
+	{"Dhoni", "EEE", "Chennai"}, 
+	{"Pant", "MECH", "Mumbai"}};
 	
 	public static void main(String[] args) {
 		
@@ -21,6 +24,14 @@ public class MultiDimensionalArray {
 			System.out.println();
 		}
 		
+		for (String[] string : studentInfo) {
+			for (String string2 : string) {
+				System.out.print(string2+ " ");
+			}
+			System.out.println();
+
+			
+		}
 		
 
 	}

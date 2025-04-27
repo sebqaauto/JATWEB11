@@ -3,7 +3,7 @@ package javaBasics;
 public class StringClassTest {
 	// new keyword is used create a new memory 
 	static int num;
-	static String student1 = "Rahul";
+	static String student1 = "Rahul"; // Recommended
 	static String student2 = new String("Rahul");
 	static String student3 = "Rahul";
 	static String student4 = "Virat";
