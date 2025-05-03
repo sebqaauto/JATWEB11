@@ -1,4 +1,5 @@
 package oops;
+import abstraction.School;
 
 public class Test {
 
@@ -42,6 +43,7 @@ public class Test {
 		System.out.println("test1 :: "+test1.flag);
 		
 		test1.year=2025;
+		//System.out.println(School.schoolName);
 		
 		Test test3 = new Test(test1);
 		

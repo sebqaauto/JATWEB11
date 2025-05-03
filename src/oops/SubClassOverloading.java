@@ -11,29 +11,27 @@ public class SubClassOverloading extends OverloadingTest{
 	}
 	
 	public String input = "Malayalam";
-	
+	String reverse="";
 	public void findPalindrome() {
 		input = input.toLowerCase();
-		char [] arr = input.toCharArray();
-		char [] revArr = new char[arr.length];
-		int counter = 0;
-		for(int i =arr.length-1; i>=0; i-- ) {
-			revArr[counter] = arr[i];
-			counter++;
+		System.out.println(input);
+		for(int i =input.length()-1 ; i>=0 ; i--) {
+			reverse = reverse+input.charAt(i);
 		}
-		
-		for (char c : revArr) {
-			System.out.print(c);
-		}
-		for (char c : arr) {
-			System.out.print(c);
-		}
-		
-		if(arr.equals(revArr)) {
+		System.out.println(reverse);
+		if(input.equals(reverse)) {
 			System.out.println("It is a palindrome");
+		}
+		else {
+			System.out.println("It is not a palindrome");
 		}
 	}
 	
+	public void doSomething() {
+		
+	}
+	
+	//public abstract void doSomeOtherthing();
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
