@@ -9,10 +9,10 @@ public interface School {
 	String schoolName ="Chennai Public School";
 	int yearOfInception = 2025;
 	
-	// Methods - are all abstract 
-	public void morningPrayer();
-	public String shcoolStartTime();
-	public String shcoolEndTime();
+	// Methods - are all abstract and by default public 
+	 void morningPrayer();
+	 String shcoolStartTime();
+	 String shcoolEndTime();
 	
 
 
