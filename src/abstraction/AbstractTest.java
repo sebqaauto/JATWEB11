@@ -8,6 +8,10 @@ public abstract class AbstractTest {
 		System.out.println("Hi from the abstract class");
 		// AbstractTest test = new AbstractTest();
 	}
+	public AbstractTest() {
+		
+	}
 	
+	AbstractTest test;
 	
 }

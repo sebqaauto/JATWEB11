@@ -2,6 +2,18 @@ package exceptions;
 
 public class ArithmeticTest {
 	
+	
+	/*
+	 * Exceptions can be handled by the following keywords
+	 * try
+	 * catch
+	 * finally
+	 * throw
+	 * throws
+	 * 
+	 * Pre defined exception - Checked & Unchecked 
+	 * 
+	 */
 	int i=0, j=1, result;
 	
 	int arr[];
