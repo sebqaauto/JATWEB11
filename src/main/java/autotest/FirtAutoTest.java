@@ -7,6 +7,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class FirtAutoTest {
 
 	public static void main(String[] args) throws InterruptedException {
+		/*
+		 * 1) WebDriver library 
+		 * 2) Browser Drivers
+		 * 3) Real Browsers
+		 */
 		
 		// Before Selenium Manager - the driver files should be downloaded and the path of it should be set
 		ChromeDriver driver = new ChromeDriver();
@@ -17,6 +22,19 @@ public class FirtAutoTest {
 		driver.findElement(By.className("ico-login")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.linkText("Register")).click();
+		
+		/*
+		 * ID
+		 * Class Name
+		 * Name
+		 * TagName
+		 * LinkText
+		 * PartialLinkText
+		 * Css selector
+		 * Xpath  -- //tagName[@attributeName ='attribute-value']
+		 * //tagName[text()='text-value']
+		 * 
+		 */
 		
 	}
 
