@@ -16,7 +16,7 @@ public class SwitchCaseTest {
 		System.out.println("Enter a month value from 1 to 6 :: ");
 		month = objectScanner.next();
 		
-		//Similar to If-ElseIf 
+		//Similar to If-ElseIf - the cases created in the switch statement should match the expression data type 
 		switch(dayOfTheWeek) {
 		
 		case 1: 

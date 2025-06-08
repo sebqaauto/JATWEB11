@@ -21,7 +21,7 @@ public class BrowserMethods {
 	
 	public void launchChromeBrowser() {
 		// Upward and Downward casting - Upward casting is implicit 
-		driver = new ChromeDriver();//GrandParent & GrandChild
+		driver = new ChromeDriver();//GrandParent & GrandChild => ancestor relationship
 		// ChromiumDriver is the parent of ChromeDriver > WebDriver is the parent of ChromiumDriver
 		
 	}

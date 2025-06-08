@@ -1,5 +1,7 @@
 package javaBasics;
 
+import java.util.Scanner;
+
 public class ArrayTest {
 
 	// Mention the size of the array or initialize 
@@ -11,7 +13,7 @@ public class ArrayTest {
 	static char[] charArr; // only declaration of an array will only be null, nothing can be stored 
 	
 	public static void main(String[] args) {
-		
+		Scanner scanner = new Scanner(System.in);
 		intArr[0] = 1;
 		intArr[1] = 2;
 		intArr[2] = 3;
@@ -37,7 +39,7 @@ public class ArrayTest {
 		}
 		
 		
-		// for each
+		// for each  - for(Array_data_type tempVar : array){}
 		for (String str : students) {
 			System.out.println(str);
 		}
