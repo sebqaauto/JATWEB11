@@ -1,7 +1,11 @@
 package autotest;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -21,36 +25,47 @@ public class Hyperlinks {
 	 * 7) driver.navigate().to(link)
 	 */
 	
-	//Declaring the driver
-	WebDriver driver;
-	String url = "https://www.facebook.com/";
-	String secondUrl = "https://www.facebook.com/r.php?entry_point=login";
-	String currentUrl;
-	String title;
-	Dimension target;
-	
-	public void setMobileView() {
-		target = new Dimension(430, 932);
-	}
-	
-	public void launchChromeBrowser() {
-		// Upward and Downward casting - Upward casting is implicit 
-		driver = new ChromeDriver();//GrandParent & GrandChild => ancestor relationship
-		// ChromiumDriver is the parent of ChromeDriver > WebDriver is the parent of ChromiumDriver
+
+		WebDriver driver;
+		String url = "https://www.facebook.com/";
 		
-	}
-	public void launchFirefoxBrowser() {
-		driver = new FirefoxDriver();
-	}
-	public void launchApp() {
-		driver.get(url);
-		//driver.manage().window().maximize();
-		driver.manage().window().setSize(target);
+		//Open ChromeBrowser
+		public void launchBrowser() {
+			driver = new ChromeDriver();
+		}
+		
+		//Open facebook application
+		public void launchApp() {
+			driver.get(url);
+			driver.manage().window().maximize();
+			}
+		
+		public void webElementFinding() {
+			//find element using <a>
+			List<WebElement> hyperLinks = driver.findElements(By.tagName("a"));
+			//find no.of hyperlinks
+			int linkCount = hyperLinks.size();
+			System.out.println("The number of hyperlinks : "+ linkCount);
+			//find 3rd hyperlink value
+			WebElement thirdLink = hyperLinks.get(3);
+			System.out.println("The 3rd hyperlink value : "+ thirdLink);
+			//find hyperlink of the corresponding value
+			String hrefValue = thirdLink.getAttribute("href");
+			System.out.println("The 3rd hyperlink : "+ hrefValue);
+			//navigate to that link
+			driver.navigate().to(hrefValue);
+			String currentUrl = driver.getCurrentUrl();
+			System.out.println("The current URL after navigation : "+ currentUrl);
+					
+		}
+		
+		public static void main(String[] args) {
+			Hyperlinks testing = new Hyperlinks();
+			testing.launchBrowser();
+			testing.launchApp();
+			testing.webElementFinding();
+
+		}
+
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
