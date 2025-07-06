@@ -58,6 +58,8 @@ public class NewWindowTest {
 	
 	public void closeWindow() {
 		driver.close();
+		// driver will always look for the default HTML DOM 
+		// It should be switched to a window to shift its focus even after close
 	}
 	
 	public void getTitelAndUrl() {
