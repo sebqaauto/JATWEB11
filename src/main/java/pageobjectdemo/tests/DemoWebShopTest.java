@@ -1,0 +1,118 @@
+package pageobjectdemo.tests;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import pageobjectdemo.pageobjects.CommonPage;
+import pageobjectdemo.pageobjects.LoginPage;
+import pageobjectdemo.pageobjects.RegistrationPage;
+import pageobjectdemo.pageobjects.ShoppingCartPage;
+import pageobjectdemo.utils.DataHelper;
+
+/*
+ * Import - you use it as it is 
+ * Inheritance - you can change/override the behaviour 
+ */
+
+public class DemoWebShopTest {
+
+	String url = "https://demowebshop.tricentis.com/";
+	WebDriver driver;
+	RegistrationPage regPage;
+	CommonPage comPage;
+	LoginPage loginPage;
+	ShoppingCartPage shopPage;
+	DataHelper dataHelper;
+	//Declaring the driver
+	
+
+	public void launchChromeBrowser() {
+		driver = new ChromeDriver();//GrandParent & GrandChild => ancestor relationship	
+		comPage = new CommonPage(this.driver);
+		regPage = new RegistrationPage(this.driver);
+		loginPage = new LoginPage(this.driver);
+		dataHelper = new DataHelper();
+	}
+
+	public void launchApp() {
+		driver.get(url);
+		driver.manage().window().maximize();
+		
+	}
+	
+	public void test1Registration() {
+		comPage.clickOnRegisterLink();
+		regPage.doRegistration("FirstName232", "LastName232", "FirstName2303.lastname@test.com", "FirstName232.lastname");
+		String accountName = comPage.printAccountName();
+		comPage.clickOnLogoutLink();
+	}
+	
+	public void test2Login() {
+		comPage.clickOnLoginLink();
+		loginPage.doLogin("FirstName232.lastname@test.com", "FirstName232.lastname");
+		comPage.clickOnLogoutLink();
+	}
+	
+	public void test3LoginWithInvalidPassword() {
+		comPage.clickOnLoginLink();
+		loginPage.enterEmailId("FirstName2308.lastname@test.com");
+		loginPage.clickOnLoginButton();
+		ArrayList<String> errorMsg = loginPage.checkErrorMessage();
+		System.out.println(errorMsg.get(0));
+		System.out.println(errorMsg.get(1));
+	}
+	
+	public void test3LoginWithInvalidEmail() {
+		comPage.clickOnLoginLink();
+		loginPage.enterEmailId("FirstName2308.lastname");
+		loginPage.enterPassword("FirstName232.lastname");
+		loginPage.clickOnLoginButton();
+	}
+	
+	public void getDataFromExcel() {
+		try {
+			dataHelper.readAllDataFromExcel("userInfo");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	List<String> userDetails;
+	public void test5RegistrationWithExcel() {
+		comPage.clickOnRegisterLink();
+		try {
+			userDetails = dataHelper.readRowSpecificDataFromExcel("userInfo", 2);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		regPage.doRegistration(userDetails);
+	}
+	
+	public static void main(String[] args) {
+		//test 1
+		DemoWebShopTest test = new DemoWebShopTest();
+		test.launchChromeBrowser();
+		test.launchApp();
+		test.test1Registration();
+		//test2 
+		test.test2Login();
+		//test3
+		test.test3LoginWithInvalidPassword();
+		//test4
+		test.test3LoginWithInvalidEmail();
+		//test5 - testing the connectivity with Excel workbook
+		test.getDataFromExcel();
+		//test6 - registration with data from the Excel workbook
+		test.test5RegistrationWithExcel();
+		
+		
+
+	}
+
+}

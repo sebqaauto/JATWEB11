@@ -37,6 +37,8 @@ public class SyncTest {
 	public void launchApp() {
 		startTime = System.currentTimeMillis();
 		driver.get(url);
+		endTime = System.currentTimeMillis();
+		System.out.println("Time taken for driver.get() to complete" + (endTime - startTime));
 		driver.manage().window().maximize();
 		//Implicit Wait is a Global Wait - it applies all the elements 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
