@@ -47,7 +47,7 @@ public class DemoWebShopTest {
 	
 	public void test1Registration() {
 		comPage.clickOnRegisterLink();
-		regPage.doRegistration("FirstName232", "LastName232", "FirstName2303.lastname@test.com", "FirstName232.lastname");
+		regPage.doRegistration("FirstName232", "LastName232", "FirstName2400.lastname@test.com", "FirstName232.lastname");
 		String accountName = comPage.printAccountName();
 		comPage.clickOnLogoutLink();
 	}
@@ -83,15 +83,19 @@ public class DemoWebShopTest {
 		}
 	}
 	List<String> userDetails;
-	public void test5RegistrationWithExcel() {
+	public void test5RegistrationWithExcel()  {
 		comPage.clickOnRegisterLink();
 		try {
-			userDetails = dataHelper.readRowSpecificDataFromExcel("userInfo", 2);
+			userDetails = dataHelper.readRowSpecificDataFromExcel("userInfo", 6);
+			regPage.doRegistration(userDetails);
+			String regUser = comPage.printAccountName();
+			dataHelper.writeRegUsersToExcel(regUser, userDetails.get(4), "registeredUsers");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		
 			e.printStackTrace();
 		}
-		regPage.doRegistration(userDetails);
+		
+		
 	}
 	
 	public static void main(String[] args) {
