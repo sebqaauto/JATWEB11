@@ -17,9 +17,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class DataHelper {
 	
+	String fileLocation = "/Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/pageobjectdemo/demowebshop.xlsx";
+	
 	public void readAllDataFromExcel(String sheetName) throws Exception {
 		
-				String fileLocation = "/Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/pageobjectdemo/demowebshop.xlsx";
 				// Establish the IO stream and set the file path
 				FileInputStream  fis = new FileInputStream(fileLocation);
 				// Open the workbook or set up the workbook object 
@@ -46,7 +47,7 @@ public class DataHelper {
 	
 	public List<String> readRowSpecificDataFromExcel(String sheetName, int rowNo) throws IOException {
 		
-		String fileLocation = "/Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/pageobjectdemo/demowebshop.xlsx";
+		
 		// Establish the IO stream and set the file path
 		FileInputStream  fis = new FileInputStream(fileLocation);
 		// Open the workbook or set up the workbook object 
@@ -69,7 +70,6 @@ public class DataHelper {
 	
 	public void writeRegUsersToExcel(String email, String password, String sheetName) throws IOException {
 		
-		String fileLocation = "/Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/pageobjectdemo/demowebshop.xlsx";
 		// Establish the IO stream and set the file path
 		FileInputStream  fis = new FileInputStream(fileLocation);
 		// Open the workbook or set up the workbook object 

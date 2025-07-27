@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.*;
 import pageobjectdemo.pageobjects.CommonPage;
 import pageobjectdemo.pageobjects.LoginPage;
 import pageobjectdemo.pageobjects.RegistrationPage;
@@ -21,9 +22,9 @@ import pageobjectdemo.utils.DataHelper;
  * Inheritance - you can change/override the behaviour 
  */
 
-public class DemoWebShopTest {
+public class DemoWebShopTestNG {
 
-	String url = "https://demowebshop.tricentis.com/";
+	//String url = "https://demowebshop.tricentis.com/";
 	WebDriver driver;
 	RegistrationPage regPage;
 	CommonPage comPage;
@@ -33,47 +34,69 @@ public class DemoWebShopTest {
 	DataBaseHelper dbHelper;
 	//Declaring the driver
 	
+	@BeforeClass
+	public void startClassTest() {
+		System.out.println("The class has started its test against ");
+	}
+	
+	@AfterClass
+	public void endClassTest() {
+		System.out.println("The class has ended its test against ");
+	}
 
-	public void launchChromeBrowser() {
+	@Parameters("demoUrl")
+	@BeforeMethod
+	public void launchChromeBrowser(String demo_Url) {
 		driver = new ChromeDriver();//GrandParent & GrandChild => ancestor relationship	
 		comPage = new CommonPage(this.driver);
 		regPage = new RegistrationPage(this.driver);
 		loginPage = new LoginPage(this.driver);
 		dataHelper = new DataHelper();
 		dbHelper = new DataBaseHelper();
-	}
-
-	public void launchApp() {
-		driver.get(url);
-		driver.manage().window().maximize();
-		
+		driver.get(demo_Url);
+		driver.manage().window().maximize();	
 	}
 	
-	public void test1Registration() {
+	@AfterMethod
+	public void closeBrowser() {
+		if(driver != null) {
+			driver.quit();
+		}	
+	}
+	
+	@Parameters({"firstName","lastName","emailId","password"})
+	@Test
+	public void test1Registration(String fName, String lName, String emailID, String pass) {
 		comPage.clickOnRegisterLink();
-		regPage.doRegistration("FirstName232", "LastName232", "FirstName2501.lastname@test.com", "FirstName232.lastname");
+		regPage.doRegistration(fName, lName, emailID, pass);
 		String accountName = comPage.printAccountName();
 		comPage.clickOnLogoutLink();
 	}
 	
-	public void test2Login() {
+	@Parameters({"password", "emailId"})
+	@Test(dependsOnMethods = "test1Registration", alwaysRun=true)
+	public void test2Login(String password, String emailId) {
 		comPage.clickOnLoginLink();
-		loginPage.doLogin("FirstName232.lastname@test.com", "FirstName232.lastname");
+		loginPage.doLogin(emailId, password);
 		comPage.clickOnLogoutLink();
 	}
 	
-	public void test3LoginWithInvalidPassword() {
+	@Parameters("emailId")
+	@Test(enabled = true)
+	public void test3LoginWithInvalidPassword(String email) {
 		comPage.clickOnLoginLink();
-		loginPage.enterEmailId("FirstName2308.lastname@test.com");
+		loginPage.enterEmailId(email);
 		loginPage.clickOnLoginButton();
 		ArrayList<String> errorMsg = loginPage.checkErrorMessage();
 		System.out.println(errorMsg.get(0));
 		System.out.println(errorMsg.get(1));
 	}
 	
-	public void test3LoginWithInvalidEmail() {
+	@Parameters("emailId")
+	@Test(enabled = true)
+	public void test3LoginWithInvalidEmail(String email) {
 		comPage.clickOnLoginLink();
-		loginPage.enterEmailId("FirstName2308.lastname");
+		loginPage.enterEmailId(email);
 		loginPage.enterPassword("FirstName232.lastname");
 		loginPage.clickOnLoginButton();
 	}
@@ -86,11 +109,13 @@ public class DemoWebShopTest {
 			e.printStackTrace();
 		}
 	}
+	
 	List<String> userDetails;
+	@Test(enabled = false)
 	public void test5RegistrationWithExcel()  {
 		comPage.clickOnRegisterLink();
 		try {
-			userDetails = dataHelper.readRowSpecificDataFromExcel("userInfo", 7);
+			userDetails = dataHelper.readRowSpecificDataFromExcel("userInfo", 3);
 			regPage.doRegistration(userDetails);
 			String regUser = comPage.printAccountName();
 			dataHelper.writeRegUsersToExcel(regUser, userDetails.get(4), "registeredUsers");
@@ -102,10 +127,12 @@ public class DemoWebShopTest {
 		
 	}
 	
-	public void test6RegistrationFromDB() {
+	@Parameters("userName")
+	@Test(enabled = false)
+	public void test6RegistrationFromDB(String user) {
 		try {
 			comPage.clickOnRegisterLink();
-			userDetails = dbHelper.fetchDBData("Sachin");
+			userDetails = dbHelper.fetchDBData(user);
 			regPage.doRegistration(userDetails);
 			String regUser = comPage.printAccountName();
 			try {
@@ -121,26 +148,5 @@ public class DemoWebShopTest {
 		}
 	}
 	
-	//single threaded main method
-	public static void main(String[] args) {
-		//test 1
-		DemoWebShopTest test = new DemoWebShopTest();
-		test.launchChromeBrowser();
-		test.launchApp();
-		//test.test1Registration();
-		//test2 
-		//test.test2Login();
-		//test3
-		//test.test3LoginWithInvalidPassword();
-		//test4
-		//test.test3LoginWithInvalidEmail();
-		//test5 - testing the connectivity with Excel workbook
-		//test.getDataFromExcel();
-		//test6 - registration with data from the Excel workbook
-		//test.test5RegistrationWithExcel();
-		//test to interact with DB 
-		test.test6RegistrationFromDB();
-		
-	}
 
 }
