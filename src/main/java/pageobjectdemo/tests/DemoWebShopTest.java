@@ -54,12 +54,14 @@ public class DemoWebShopTest {
 		regPage.doRegistration("FirstName232", "LastName232", "FirstName2501.lastname@test.com", "FirstName232.lastname");
 		String accountName = comPage.printAccountName();
 		comPage.clickOnLogoutLink();
+		System.out.println("test1Registration Executed from " + Thread.currentThread().getName());
 	}
 	
 	public void test2Login() {
 		comPage.clickOnLoginLink();
 		loginPage.doLogin("FirstName232.lastname@test.com", "FirstName232.lastname");
 		comPage.clickOnLogoutLink();
+		System.out.println("test2Login Executed from " + Thread.currentThread().getName());
 	}
 	
 	public void test3LoginWithInvalidPassword() {
@@ -69,6 +71,7 @@ public class DemoWebShopTest {
 		ArrayList<String> errorMsg = loginPage.checkErrorMessage();
 		System.out.println(errorMsg.get(0));
 		System.out.println(errorMsg.get(1));
+		System.out.println("test3LoginWithInvalidPassword Executed from " + Thread.currentThread().getName());
 	}
 	
 	public void test3LoginWithInvalidEmail() {
@@ -76,6 +79,7 @@ public class DemoWebShopTest {
 		loginPage.enterEmailId("FirstName2308.lastname");
 		loginPage.enterPassword("FirstName232.lastname");
 		loginPage.clickOnLoginButton();
+		System.out.println("test3LoginWithInvalidEmail Executed from " + Thread.currentThread().getName());
 	}
 	
 	public void getDataFromExcel() {

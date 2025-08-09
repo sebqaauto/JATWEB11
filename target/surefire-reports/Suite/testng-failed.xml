@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="demoUrl" value="https://demowebshop.tricentis.com/"/>
+  <parameter name="firstName" value="FirstName2511"/>
+  <parameter name="lastName" value="LastName2511"/>
+  <parameter name="password" value="lastname@test.com"/>
+  <parameter name="emailId" value="FirstName2511.lastname@test.com"/>
+  <parameter name="userName" value="Yuvi"/>
+  <test thread-count="5" parallel="tests" name="DemoWebTest(failed)" verbose="0">
+    <classes>
+      <class name="pageobjectdemo.tests.DemoWebShopTestNG">
+        <methods>
+          <include name="startClassTest"/>
+          <include name="launchChromeBrowser"/>
+          <include name="test1Registration" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="test3LoginWithInvalidPassword" invocation-numbers="0"/>
+          <include name="endClassTest"/>
+        </methods>
+      </class> <!-- pageobjectdemo.tests.DemoWebShopTestNG -->
+    </classes>
+  </test> <!-- DemoWebTest(failed) -->
+  <test thread-count="5" parallel="tests" name="AmazonTest(failed)" verbose="0">
+    <classes>
+      <class name="pageobjectdemo.tests.AmazonTestNG">
+        <methods>
+          <include name="launchChromeBrowser"/>
+          <include name="runSearchTestForBrands"/>
+          <include name="closeBrowser"/>
+          <include name="runSearchTest" invocation-numbers="1"/>
+          <include name="endClassTest"/>
+          <include name="startClassTest"/>
+        </methods>
+      </class> <!-- pageobjectdemo.tests.AmazonTestNG -->
+    </classes>
+  </test> <!-- AmazonTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

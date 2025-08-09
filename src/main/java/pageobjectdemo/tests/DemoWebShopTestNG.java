@@ -71,6 +71,7 @@ public class DemoWebShopTestNG {
 		regPage.doRegistration(fName, lName, emailID, pass);
 		String accountName = comPage.printAccountName();
 		comPage.clickOnLogoutLink();
+		System.out.println("test1Registration Executed from " + Thread.currentThread().getName());
 	}
 	
 	@Parameters({"password", "emailId"})
@@ -79,6 +80,7 @@ public class DemoWebShopTestNG {
 		comPage.clickOnLoginLink();
 		loginPage.doLogin(emailId, password);
 		comPage.clickOnLogoutLink();
+		System.out.println("test2Login Executed from " + Thread.currentThread().getName());
 	}
 	
 	@Parameters("emailId")
@@ -90,15 +92,17 @@ public class DemoWebShopTestNG {
 		ArrayList<String> errorMsg = loginPage.checkErrorMessage();
 		System.out.println(errorMsg.get(0));
 		System.out.println(errorMsg.get(1));
+		System.out.println("test3LoginWithInvalidPassword Executed from " + Thread.currentThread().getName());
 	}
 	
 	@Parameters("emailId")
 	@Test(enabled = true)
-	public void test3LoginWithInvalidEmail(String email) {
+	public void test4LoginWithInvalidEmail(String email) {
 		comPage.clickOnLoginLink();
 		loginPage.enterEmailId(email);
 		loginPage.enterPassword("FirstName232.lastname");
 		loginPage.clickOnLoginButton();
+		System.out.println("test4LoginWithInvalidEmail Executed from " + Thread.currentThread().getName());
 	}
 	
 	public void getDataFromExcel() {

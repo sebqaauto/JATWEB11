@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageobjectdemo.tests.DemoWebShopTestNG">
+      <class name="pageobjectdemo.tests.AmazonTestNG">
         <methods>
           <include name="launchChromeBrowser"/>
-          <include name="test2Login"/>
           <include name="closeBrowser"/>
+          <include name="runSearchTest" invocation-numbers="2"/>
+          <include name="endClassTest"/>
+          <include name="startClassTest"/>
         </methods>
-      </class> <!-- pageobjectdemo.tests.DemoWebShopTestNG -->
+      </class> <!-- pageobjectdemo.tests.AmazonTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
