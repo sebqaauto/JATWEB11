@@ -53,4 +53,7 @@ public class CommonPage {
 		}
 	}
 
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
 }

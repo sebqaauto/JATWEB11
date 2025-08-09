@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="15" passed="3" failed="3" skipped="4">
+<testng-results ignored="2" total="6" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-09T14:12:10 BST" name="Suite" finished-at="2025-08-09T14:18:04 BST" duration-ms="354693">
+  <suite started-at="2025-08-09T16:24:12 BST" name="Suite" finished-at="2025-08-09T16:26:08 BST" duration-ms="115357">
     <groups>
     </groups>
-    <test started-at="2025-08-09T14:12:10 BST" name="DemoWebTest" finished-at="2025-08-09T14:14:45 BST" duration-ms="155707">
+    <test started-at="2025-08-09T16:24:12 BST" name="DemoWebTest" finished-at="2025-08-09T16:26:08 BST" duration-ms="115357">
       <class name="pageobjectdemo.tests.DemoWebShopTestNG">
-        <test-method is-config="true" signature="startClassTest()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:12:10 BST" name="startClassTest" finished-at="2025-08-09T14:12:10 BST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="startClassTest()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:13 BST" name="startClassTest" finished-at="2025-08-09T16:24:13 BST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClassTest -->
-        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:12:10 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:12:46 BST" duration-ms="36014" status="PASS">
+        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:13 BST" name="launchChromeBrowser" finished-at="2025-08-09T16:24:32 BST" duration-ms="19750" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,21 +22,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="test1Registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:12:46 BST" name="test1Registration" finished-at="2025-08-09T14:13:06 BST" duration-ms="19879" status="FAIL">
+        <test-method signature="test1Registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:32 BST" name="test1Registration" finished-at="2025-08-09T16:24:43 BST" duration-ms="11102" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FirstName2511]]>
+                <![CDATA[FirstName2518]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[LastName2511]]>
+                <![CDATA[LastName2518]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[FirstName2511.lastname@test.com]]>
+                <![CDATA[FirstName2518.lastname@test.com]]>
               </value>
             </param>
             <param index="3">
@@ -53,9 +53,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0343a0f9b86a2fa9c857e9abea5650be, findElement {value=.header-links .account, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54204}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54204/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0343a0f9b86a2fa9c857e9abea5650be]]>
+Command: [783aefd3873dfe6967e3896404e1aced, findElement {value=.header-links .account, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59979}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59979/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 783aefd3873dfe6967e3896404e1aced]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".header-links .account"}
@@ -64,9 +64,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0343a0f9b86a2fa9c857e9abea5650be, findElement {value=.header-links .account, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54204}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54204/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0343a0f9b86a2fa9c857e9abea5650be
+Command: [783aefd3873dfe6967e3896404e1aced, findElement {value=.header-links .account, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59979}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59979/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 783aefd3873dfe6967e3896404e1aced
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -82,7 +82,7 @@ at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:5
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 at pageobjectdemo.pageobjects.CommonPage.printAccountName(CommonPage.java:34)
-at pageobjectdemo.tests.DemoWebShopTestNG.test1Registration(DemoWebShopTestNG.java:72)
+at pageobjectdemo.tests.DemoWebShopTestNG.test1Registration(DemoWebShopTestNG.java:80)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -109,11 +109,11 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1Registration -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:13:06 BST" name="closeBrowser" finished-at="2025-08-09T14:13:06 BST" duration-ms="520" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:43 BST" name="closeBrowser" finished-at="2025-08-09T16:24:44 BST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:13:06 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:13:28 BST" duration-ms="22123" status="PASS">
+        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:44 BST" name="launchChromeBrowser" finished-at="2025-08-09T16:25:03 BST" duration-ms="19042" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,86 +124,22 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="test3LoginWithInvalidPassword(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:13:28 BST" name="test3LoginWithInvalidPassword" finished-at="2025-08-09T14:13:41 BST" duration-ms="12529" status="FAIL">
+        <test-method signature="test3LoginWithInvalidPassword(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:03 BST" name="test3LoginWithInvalidPassword" finished-at="2025-08-09T16:25:12 BST" duration-ms="9452" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FirstName2511.lastname@test.com]]>
+                <![CDATA[FirstName2518.lastname@test.com]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".validation-summary-errors>span"}
-  (Session info: chrome=138.0.7204.184)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e399c763294dcab839d2e69cd7fa42a8, findElement {value=.validation-summary-errors>span, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54298/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e399c763294dcab839d2e69cd7fa42a8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".validation-summary-errors>span"}
-  (Session info: chrome=138.0.7204.184)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e399c763294dcab839d2e69cd7fa42a8, findElement {value=.validation-summary-errors>span, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54298/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e399c763294dcab839d2e69cd7fa42a8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
-at pageobjectdemo.pageobjects.LoginPage.checkErrorMessage(LoginPage.java:63)
-at pageobjectdemo.tests.DemoWebShopTestNG.test3LoginWithInvalidPassword(DemoWebShopTestNG.java:92)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3LoginWithInvalidPassword -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:13:41 BST" name="closeBrowser" finished-at="2025-08-09T14:13:41 BST" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:12 BST" name="closeBrowser" finished-at="2025-08-09T16:25:12 BST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:13:41 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:14:00 BST" duration-ms="19458" status="PASS">
+        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:12 BST" name="launchChromeBrowser" finished-at="2025-08-09T16:25:30 BST" duration-ms="17949" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -214,22 +150,22 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="test4LoginWithInvalidEmail(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:14:00 BST" name="test4LoginWithInvalidEmail" finished-at="2025-08-09T14:14:08 BST" duration-ms="7753" status="PASS">
+        <test-method signature="test4LoginWithInvalidEmail(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:30 BST" name="test4LoginWithInvalidEmail" finished-at="2025-08-09T16:25:39 BST" duration-ms="8585" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FirstName2511.lastname@test.com]]>
+                <![CDATA[FirstName2518.lastname@test.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4LoginWithInvalidEmail -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:14:08 BST" name="closeBrowser" finished-at="2025-08-09T14:14:08 BST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:39 BST" name="closeBrowser" finished-at="2025-08-09T16:25:39 BST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:14:08 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:14:32 BST" duration-ms="23859" status="PASS">
+        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:39 BST" name="launchChromeBrowser" finished-at="2025-08-09T16:25:57 BST" duration-ms="18117" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -240,7 +176,7 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="test2Login(java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:14:32 BST" name="test2Login" finished-at="2025-08-09T14:14:45 BST" depends-on-methods="pageobjectdemo.tests.DemoWebShopTestNG.test1Registration" duration-ms="12581" status="PASS">
+        <test-method signature="test2Login(java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:57 BST" name="test2Login" finished-at="2025-08-09T16:26:08 BST" depends-on-methods="pageobjectdemo.tests.DemoWebShopTestNG.test1Registration" duration-ms="10572" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -249,691 +185,22 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
             </param>
             <param index="1">
               <value>
-                <![CDATA[FirstName2511.lastname@test.com]]>
+                <![CDATA[FirstName2518.lastname@test.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:14:45 BST" name="closeBrowser" finished-at="2025-08-09T14:14:45 BST" duration-ms="459" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:26:08 BST" name="closeBrowser" finished-at="2025-08-09T16:26:08 BST" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="endClassTest()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@1d2adfbe]" started-at="2025-08-09T14:14:45 BST" name="endClassTest" finished-at="2025-08-09T14:14:45 BST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="endClassTest()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:26:08 BST" name="endClassTest" finished-at="2025-08-09T16:26:08 BST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endClassTest -->
       </class> <!-- pageobjectdemo.tests.DemoWebShopTestNG -->
     </test> <!-- DemoWebTest -->
-    <test started-at="2025-08-09T14:12:10 BST" name="AmazonTest" finished-at="2025-08-09T14:18:04 BST" duration-ms="354693">
-      <class name="pageobjectdemo.tests.AmazonTestNG">
-        <test-method is-config="true" signature="startClassTest()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:12:10 BST" name="startClassTest" finished-at="2025-08-09T14:12:10 BST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startClassTest -->
-        <test-method is-config="true" signature="launchChromeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:12:10 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:13:38 BST" duration-ms="88299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="runSearchTest(java.lang.String)[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:13:38 BST" name="runSearchTest" data-provider="search-data" finished-at="2025-08-09T14:15:40 BST" duration-ms="121595" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iphone 15]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runSearchTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:15:40 BST" name="closeBrowser" finished-at="2025-08-09T14:15:41 BST" duration-ms="1073" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchChromeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:15:41 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:16:30 BST" duration-ms="48827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="runSearchTest(java.lang.String)[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:16:30 BST" name="runSearchTest" data-provider="search-data" finished-at="2025-08-09T14:17:59 BST" duration-ms="89564" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samsung]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, clearElement [id]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (7eb381c3da36f97cded7d8ed5ea492e6)] -> id: twotabsearchtextbox]
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, clearElement [id]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (7eb381c3da36f97cded7d8ed5ea492e6)] -> id: twotabsearchtextbox]
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy13.clear(Unknown Source)
-at pageobjectdemo.pageobjects.AmazonPage.searchAndFindFirstProduct(AmazonPage.java:38)
-at pageobjectdemo.tests.AmazonTestNG.runSearchTest(AmazonTestNG.java:69)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-... 4 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:971)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-... 8 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:440)
-at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
-at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-... 3 more
-Caused by: java.io.EOFException: EOF reached while reading
-at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:601)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:648)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:853)
-at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1478)
-at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1423)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1423)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runSearchTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:17:59 BST" name="closeBrowser" finished-at="2025-08-09T14:18:04 BST" duration-ms="5079" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
-at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:442)
-at pageobjectdemo.tests.AmazonTestNG.closeBrowser(AmazonTestNG.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-Caused by: java.util.concurrent.ExecutionException: java.io.UncheckedIOException: java.net.ConnectException
-at java.base/java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345)
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
-... 31 more
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-... 4 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:956)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-... 8 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1082)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
-at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:978)
-at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:955)
-at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1817)
-... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
-at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:958)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
-... 9 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchChromeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="runSearchTest(java.lang.String)[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="runSearchTest" data-provider="search-data" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[motorola]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
-at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:442)
-at pageobjectdemo.tests.AmazonTestNG.closeBrowser(AmazonTestNG.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-Caused by: java.util.concurrent.ExecutionException: java.io.UncheckedIOException: java.net.ConnectException
-at java.base/java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345)
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
-... 31 more
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-... 4 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:956)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-... 8 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1082)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
-at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:978)
-at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:955)
-at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1817)
-... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
-at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:958)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
-... 9 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runSearchTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="closeBrowser" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method signature="runSearchTestForBrands(java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="runSearchTestForBrands" data-provider="provideBrandAndSearchData" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sony]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sony bravia 55 inch]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
-at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:442)
-at pageobjectdemo.tests.AmazonTestNG.closeBrowser(AmazonTestNG.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-Caused by: java.util.concurrent.ExecutionException: java.io.UncheckedIOException: java.net.ConnectException
-at java.base/java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345)
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
-... 31 more
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-... 4 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:956)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-... 8 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1082)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
-at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:978)
-at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:955)
-at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1817)
-... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
-at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:958)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
-... 9 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runSearchTestForBrands -->
-        <test-method is-config="true" signature="launchChromeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="runSearchTestForBrands(java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="runSearchTestForBrands" data-provider="provideBrandAndSearchData" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Xiaomi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[xiomi̇ pad 7 pro]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
-at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:442)
-at pageobjectdemo.tests.AmazonTestNG.closeBrowser(AmazonTestNG.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-Caused by: java.util.concurrent.ExecutionException: java.io.UncheckedIOException: java.net.ConnectException
-at java.base/java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345)
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
-... 31 more
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-... 4 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:956)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-... 8 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1082)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
-at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:978)
-at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:955)
-at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1817)
-... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
-at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:958)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
-... 9 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runSearchTestForBrands -->
-        <test-method is-config="true" signature="launchChromeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchChromeBrowser -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="closeBrowser" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="closeBrowser" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method signature="runSearchTestForBrands(java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="runSearchTestForBrands" data-provider="provideBrandAndSearchData" finished-at="2025-08-09T14:18:04 BST" duration-ms="1" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TCL]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tcl 55 inch tv]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7eb381c3da36f97cded7d8ed5ea492e6, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54452/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7eb381c3da36f97cded7d8ed5ea492e6
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
-at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:442)
-at pageobjectdemo.tests.AmazonTestNG.closeBrowser(AmazonTestNG.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
-Caused by: java.util.concurrent.ExecutionException: java.io.UncheckedIOException: java.net.ConnectException
-at java.base/java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345)
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
-... 31 more
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-... 4 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:956)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-... 8 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1082)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
-at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:978)
-at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:955)
-at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1817)
-... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204)
-at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:958)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
-... 9 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runSearchTestForBrands -->
-        <test-method is-config="true" signature="launchChromeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="launchChromeBrowser" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchChromeBrowser -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="closeBrowser" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="endClassTest()[pri:0, instance:pageobjectdemo.tests.AmazonTestNG@3754a4bf]" started-at="2025-08-09T14:18:04 BST" name="endClassTest" finished-at="2025-08-09T14:18:04 BST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endClassTest -->
-      </class> <!-- pageobjectdemo.tests.AmazonTestNG -->
-    </test> <!-- AmazonTest -->
   </suite> <!-- Suite -->
 </testng-results>

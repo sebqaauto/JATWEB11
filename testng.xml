@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Suite">
+<listeners>
+<listener class-name="pageobjectdemo.tests.MyTestListener" />
+</listeners>
 <parameter name="demoUrl" value="https://demowebshop.tricentis.com/"></parameter>
 <parameter name="userName" value="Yuvi"></parameter>
-<parameter name="firstName" value="FirstName2511"></parameter>
-<parameter name="lastName" value="LastName2511"></parameter>
-<parameter name="emailId" value="FirstName2511.lastname@test.com"></parameter>
+<parameter name="firstName" value="FirstName2518"></parameter>
+<parameter name="lastName" value="LastName2518"></parameter>
+<parameter name="emailId" value="FirstName2518.lastname@test.com"></parameter>
 <parameter name="password" value="lastname@test.com"></parameter>
   <test thread-count="5" parallel="tests" name="DemoWebTest">
     <classes>
       <class name="pageobjectdemo.tests.DemoWebShopTestNG"/>
-    </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" parallel="tests" name="AmazonTest">
-    <classes>
-     <class name="pageobjectdemo.tests.AmazonTestNG"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

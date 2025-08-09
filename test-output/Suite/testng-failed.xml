@@ -2,11 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="demoUrl" value="https://demowebshop.tricentis.com/"/>
-  <parameter name="firstName" value="FirstName2509"/>
-  <parameter name="lastName" value="LastName2509"/>
+  <parameter name="firstName" value="FirstName2518"/>
+  <parameter name="lastName" value="LastName2518"/>
   <parameter name="password" value="lastname@test.com"/>
-  <parameter name="emailId" value="FirstName2509.lastname@test.com"/>
+  <parameter name="emailId" value="FirstName2518.lastname@test.com"/>
   <parameter name="userName" value="Yuvi"/>
+  <listeners>
+    <listener class-name="pageobjectdemo.tests.MyTestListener"/>
+  </listeners>
   <test thread-count="5" parallel="tests" name="DemoWebTest(failed)">
     <classes>
       <class name="pageobjectdemo.tests.DemoWebShopTestNG">

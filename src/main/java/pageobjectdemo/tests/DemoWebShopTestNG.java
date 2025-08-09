@@ -9,7 +9,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
+
 import pageobjectdemo.pageobjects.CommonPage;
 import pageobjectdemo.pageobjects.LoginPage;
 import pageobjectdemo.pageobjects.RegistrationPage;
@@ -67,11 +70,19 @@ public class DemoWebShopTestNG {
 	@Parameters({"firstName","lastName","emailId","password"})
 	@Test
 	public void test1Registration(String fName, String lName, String emailID, String pass) {
+		SoftAssert softAssert = new SoftAssert();
 		comPage.clickOnRegisterLink();
+		String title = comPage.getPageTitle();
+		//Assert.assertTrue(title.equals("Demo Web Shop"), "The webpage title matches"); - Will terminate the test
+		softAssert.assertTrue(title.equals("Demo Web Shop"), "The webpage title matches");
+		//Soft assert will not terminate, it will continue and finally it tells the status of the test
 		regPage.doRegistration(fName, lName, emailID, pass);
-		String accountName = comPage.printAccountName();
+		String accountName = comPage.printAccountName()+"rr";
 		comPage.clickOnLogoutLink();
 		System.out.println("test1Registration Executed from " + Thread.currentThread().getName());
+		//Assert.assertTrue(accountName.equals(emailID), "The emailId and the account Name matches");
+		softAssert.assertTrue(accountName.equals(emailID), "The emailId and the account Name matches");
+		softAssert.assertAll();
 	}
 	
 	@Parameters({"password", "emailId"})
