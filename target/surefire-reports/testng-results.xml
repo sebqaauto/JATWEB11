@@ -2,16 +2,16 @@
 <testng-results ignored="2" total="6" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-09T16:24:12 BST" name="Suite" finished-at="2025-08-09T16:26:08 BST" duration-ms="115357">
+  <suite started-at="2025-08-10T16:14:49 BST" name="Suite" finished-at="2025-08-10T16:15:04 BST" duration-ms="15558">
     <groups>
     </groups>
-    <test started-at="2025-08-09T16:24:12 BST" name="DemoWebTest" finished-at="2025-08-09T16:26:08 BST" duration-ms="115357">
+    <test started-at="2025-08-10T16:14:49 BST" name="DemoWebTest" finished-at="2025-08-10T16:15:04 BST" duration-ms="15558">
       <class name="pageobjectdemo.tests.DemoWebShopTestNG">
-        <test-method is-config="true" signature="startClassTest()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:13 BST" name="startClassTest" finished-at="2025-08-09T16:24:13 BST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="startClassTest()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:14:49 BST" name="startClassTest" finished-at="2025-08-10T16:14:49 BST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startClassTest -->
-        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:13 BST" name="launchChromeBrowser" finished-at="2025-08-09T16:24:32 BST" duration-ms="19750" status="PASS">
+        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:14:49 BST" name="launchChromeBrowser" finished-at="2025-08-10T16:14:53 BST" duration-ms="4153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="test1Registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:32 BST" name="test1Registration" finished-at="2025-08-09T16:24:43 BST" duration-ms="11102" status="FAIL">
+        <test-method signature="test1Registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:14:53 BST" name="test1Registration" finished-at="2025-08-10T16:14:54 BST" duration-ms="1197" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -53,9 +53,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [783aefd3873dfe6967e3896404e1aced, findElement {value=.header-links .account, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59979}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59979/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 783aefd3873dfe6967e3896404e1aced]]>
+Command: [0dc5369776e9d33bf48971479ea2b991, findElement {value=.header-links .account, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54205/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0dc5369776e9d33bf48971479ea2b991]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".header-links .account"}
@@ -64,9 +64,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [783aefd3873dfe6967e3896404e1aced, findElement {value=.header-links .account, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59979}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59979/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 783aefd3873dfe6967e3896404e1aced
+Command: [0dc5369776e9d33bf48971479ea2b991, findElement {value=.header-links .account, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/vk/dx65fkld16z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54205/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0dc5369776e9d33bf48971479ea2b991
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -109,11 +109,11 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1Registration -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:43 BST" name="closeBrowser" finished-at="2025-08-09T16:24:44 BST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:14:54 BST" name="closeBrowser" finished-at="2025-08-10T16:14:54 BST" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:24:44 BST" name="launchChromeBrowser" finished-at="2025-08-09T16:25:03 BST" duration-ms="19042" status="PASS">
+        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:14:54 BST" name="launchChromeBrowser" finished-at="2025-08-10T16:14:57 BST" duration-ms="2462" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,7 +124,7 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="test3LoginWithInvalidPassword(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:03 BST" name="test3LoginWithInvalidPassword" finished-at="2025-08-09T16:25:12 BST" duration-ms="9452" status="PASS">
+        <test-method signature="test3LoginWithInvalidPassword(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:14:57 BST" name="test3LoginWithInvalidPassword" finished-at="2025-08-10T16:14:57 BST" duration-ms="689" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,11 +135,11 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3LoginWithInvalidPassword -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:12 BST" name="closeBrowser" finished-at="2025-08-09T16:25:12 BST" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:14:57 BST" name="closeBrowser" finished-at="2025-08-10T16:14:58 BST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:12 BST" name="launchChromeBrowser" finished-at="2025-08-09T16:25:30 BST" duration-ms="17949" status="PASS">
+        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:14:58 BST" name="launchChromeBrowser" finished-at="2025-08-10T16:15:00 BST" duration-ms="2045" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,7 +150,7 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="test4LoginWithInvalidEmail(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:30 BST" name="test4LoginWithInvalidEmail" finished-at="2025-08-09T16:25:39 BST" duration-ms="8585" status="PASS">
+        <test-method signature="test4LoginWithInvalidEmail(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:15:00 BST" name="test4LoginWithInvalidEmail" finished-at="2025-08-10T16:15:01 BST" duration-ms="1085" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,11 +161,11 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4LoginWithInvalidEmail -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:39 BST" name="closeBrowser" finished-at="2025-08-09T16:25:39 BST" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:15:01 BST" name="closeBrowser" finished-at="2025-08-10T16:15:01 BST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:39 BST" name="launchChromeBrowser" finished-at="2025-08-09T16:25:57 BST" duration-ms="18117" status="PASS">
+        <test-method is-config="true" signature="launchChromeBrowser(java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:15:01 BST" name="launchChromeBrowser" finished-at="2025-08-10T16:15:03 BST" duration-ms="2203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,7 +176,7 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChromeBrowser -->
-        <test-method signature="test2Login(java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:25:57 BST" name="test2Login" finished-at="2025-08-09T16:26:08 BST" depends-on-methods="pageobjectdemo.tests.DemoWebShopTestNG.test1Registration" duration-ms="10572" status="PASS">
+        <test-method signature="test2Login(java.lang.String,java.lang.String)[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:15:03 BST" name="test2Login" finished-at="2025-08-10T16:15:04 BST" depends-on-methods="pageobjectdemo.tests.DemoWebShopTestNG.test1Registration" duration-ms="1303" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,11 +192,11 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:26:08 BST" name="closeBrowser" finished-at="2025-08-09T16:26:08 BST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:15:04 BST" name="closeBrowser" finished-at="2025-08-10T16:15:04 BST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="endClassTest()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@36902638]" started-at="2025-08-09T16:26:08 BST" name="endClassTest" finished-at="2025-08-09T16:26:08 BST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="endClassTest()[pri:0, instance:pageobjectdemo.tests.DemoWebShopTestNG@6cf0e0ba]" started-at="2025-08-10T16:15:04 BST" name="endClassTest" finished-at="2025-08-10T16:15:04 BST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endClassTest -->

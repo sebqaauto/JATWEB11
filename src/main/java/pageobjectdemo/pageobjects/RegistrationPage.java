@@ -76,6 +76,14 @@ public class RegistrationPage {
 		registerButton.click();
     }
 	
+	public void selectGender(String gender) {
+		if(gender.equals("male")) {
+			genderMale.click();
+		}else {
+			genderFemale.click();
+		}
+	}
+	
 	public void enterfistName(String fName) {
 		firstName.sendKeys(fName);	
 	}
@@ -84,7 +92,7 @@ public class RegistrationPage {
 		lastName.sendKeys(lName);	
 	}
 	
-	public void enterEmailName(String emailID) {
+	public void enterEmailID(String emailID) {
 		email.sendKeys(emailID);	
 	}
 	

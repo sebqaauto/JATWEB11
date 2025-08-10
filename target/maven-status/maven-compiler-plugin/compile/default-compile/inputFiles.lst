@@ -103,6 +103,8 @@
 /Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/pageobjectdemo/tests/TestNGTest2.java
 /Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/pageobjectdemo/utils/DataBaseHelper.java
 /Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/pageobjectdemo/utils/DataHelper.java
+/Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/runner/TestRunerJunit.java
+/Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/stepDefinitions/StepsDefinitionsClass.java
 /Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/streams/FileReaderWriter.java
 /Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/streams/ReadFromExcel.java
 /Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/streams/WriteToExcel.java
