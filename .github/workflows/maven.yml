@@ -25,12 +25,25 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
-        # Find and install the correct ChromeDriver version
-        LATEST_CHROME_VERSION=$(google-chrome --version | cut -d ' ' -f3 | cut -d '.' -f1)
-        LATEST_CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${LATEST_CHROME_VERSION}" | xargs)
-        wget -N https://chromedriver.storage.googleapis.com/${LATEST_CHROMEDRIVER_VERSION}/chromedriver_linux64.zip
-        unzip chromedriver_linux64.zip
+        
+        # New, reliable way to find and install the correct ChromeDriver version
+        # It fetches the version from a JSON API
+        CHROME_VERSION=$(google-chrome --version | cut -d ' ' -f3)
+        CHROME_DRIVER_URL=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | \
+          grep -oE "https:\/\/edgedl.me.gvt1.com\/edgedl\/chrome\/chrome-for-testing\/[0-9.]+\/linux64\/chromedriver-linux64.zip" | \
+          head -n 1)
+
+        echo "LATEST_CHROME_VERSION: $CHROME_VERSION"
+        echo "CHROMEDRIVER_URL: $CHROME_DRIVER_URL"
+
+        wget -O chromedriver.zip $CHROME_DRIVER_URL
+        unzip chromedriver.zip
+        
+        # The unzip command extracts to a new directory, so we need to move it
+        mv chromedriver-linux64/chromedriver chromedriver
         chmod +x chromedriver
+        
+        # Move ChromeDriver to a path that is in the PATH environment variable
         sudo mv -f chromedriver /usr/local/share/chromedriver
         sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 
