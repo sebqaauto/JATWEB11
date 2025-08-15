@@ -26,16 +26,19 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
         
+        # Install jq for reliable JSON parsing
+        sudo apt-get install -y jq
+        
         # New, reliable way to find and install the correct ChromeDriver version
         # It fetches the version from a JSON API
         CHROME_VERSION=$(google-chrome --version | cut -d ' ' -f3)
         CHROME_DRIVER_URL=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | \
-          grep -oE "https:\/\/edgedl.me.gvt1.com\/edgedl\/chrome\/chrome-for-testing\/[0-9.]+\/linux64\/chromedriver-linux64.zip" | \
-          head -n 1)
+          jq -r '.versions[] | select(.version | startswith("'${CHROME_VERSION%.*}'")) | .downloads.chromedriver[] | select(.platform == "linux64") | .url' | head -n 1)
 
         echo "LATEST_CHROME_VERSION: $CHROME_VERSION"
         echo "CHROMEDRIVER_URL: $CHROME_DRIVER_URL"
 
+        # The rest of the download and setup logic remains the same
         wget -O chromedriver.zip $CHROME_DRIVER_URL
         unzip chromedriver.zip
         
