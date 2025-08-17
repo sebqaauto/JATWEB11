@@ -48,9 +48,9 @@ public class DropDownTest {
 		WebElement element = driver.findElement(By.id("testingDropdown"));
 		Select dropdown = new Select(element);
 		dropdown.selectByVisibleText("Manual Testing");
-		Thread.sleep(Duration.ofSeconds(2));
+		//Thread.sleep(Duration.ofSeconds(2));
 		dropdown.selectByIndex(1);
-		Thread.sleep(Duration.ofSeconds(2));
+		//Thread.sleep(Duration.ofSeconds(2));
 		dropdown.selectByValue("Database");
 	}
 	public static void main(String[] args) throws InterruptedException {
