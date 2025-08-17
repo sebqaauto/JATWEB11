@@ -21,3 +21,15 @@ Examples:
 	|male|Sam|Williams|Sam.2306@nasa.com|YouKnowMe001|YouKnowMe001|
 	|female|Serena|Williams|Serena.2307@nasa.com|YouKnowMe001|YouKnowMe001|
 	|male|Rahul|Williams|Rahul.2308@nasa.com|YouKnowMe001|YouKnowMe001|
+
+Scenario: Add products from Demo Web Shop home page
+When user adds the products to basket
+|$25 Virtual Gift Card|
+|Build your own expensive computer|
+|Build your own cheap computer|
+|Build your own computer|
+And clicks on go to shopping cart link
+Then user should be landing in shopping cart page
+
+
+

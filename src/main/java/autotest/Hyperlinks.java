@@ -7,6 +7,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Hyperlinks {
@@ -31,7 +32,10 @@ public class Hyperlinks {
 		
 		//Open ChromeBrowser
 		public void launchBrowser() {
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless=new"); 
+			driver = new ChromeDriver(options);
+				
 		}
 		
 		//Open facebook application

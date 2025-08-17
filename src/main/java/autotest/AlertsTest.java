@@ -45,7 +45,7 @@ public class AlertsTest {
 		driver.findElement(By.id("alertButton")).click();
 		Alert alert = driver.switchTo().alert();
 		alertText = alert.getText();
-		Thread.sleep(Duration.ofSeconds(3));
+		//Thread.sleep(Duration.ofSeconds(3));
 		alert.accept();
 		System.out.println(alertText);
 		
@@ -56,7 +56,7 @@ public class AlertsTest {
 		confirmAlert.click();
 		alert = driver.switchTo().alert();
 		alertText = alert.getText();
-		Thread.sleep(Duration.ofSeconds(3));
+		//Thread.sleep(Duration.ofSeconds(3));
 		alert.dismiss();
 		System.out.println(alertText);
 		
@@ -65,7 +65,7 @@ public class AlertsTest {
 		alert = driver.switchTo().alert();
 		alert.sendKeys("Test of Test");
 		alertText = alert.getText();
-		Thread.sleep(Duration.ofSeconds(3));
+		//Thread.sleep(Duration.ofSeconds(3));
 		alert.accept();
 		System.out.println(alertText);
 		

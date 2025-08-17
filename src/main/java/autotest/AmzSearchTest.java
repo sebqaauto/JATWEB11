@@ -50,7 +50,7 @@ public class AmzSearchTest {
 	
 	public void scrollTo() throws InterruptedException {
 	WebElement element = driver.findElement(By.id("similarities-product-bundle-widget-title"));
-	Thread.sleep(Duration.ofSeconds(3));
+	//Thread.sleep(Duration.ofSeconds(3));
 	Actions action = new Actions(driver);
 	//action.scrollToElement(element).build().perform();
 	WebElement showDetails = driver.findElement(By.xpath("//a[contains(text(),'Show details')]"));

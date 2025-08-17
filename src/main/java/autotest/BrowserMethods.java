@@ -3,6 +3,7 @@ package autotest;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserMethods {
@@ -20,8 +21,10 @@ public class BrowserMethods {
 	}
 	
 	public void launchChromeBrowser() {
+		ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new"); 
 		// Upward and Downward casting - Upward casting is implicit 
-		driver = new ChromeDriver();//GrandParent & GrandChild => ancestor relationship
+		driver = new ChromeDriver(options);//GrandParent & GrandChild => ancestor relationship
 		// ChromiumDriver is the parent of ChromeDriver > WebDriver is the parent of ChromiumDriver
 		
 	}

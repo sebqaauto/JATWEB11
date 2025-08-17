@@ -9,8 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features ="src/main/java/features", 
 		glue="stepDefinitions", 
-		tags="@regression",
-		plugin= {"pretty", "html:target/cucumber-reports/cucumber.html" })
+		//tags="@regression",
+		plugin= {"pretty", "html:target/cucumber-reports/cucumber.html" },
+		dryRun = false)
 public class TestRunerJunit {
 //Dummy Class
 }

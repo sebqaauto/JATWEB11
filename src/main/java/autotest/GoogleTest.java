@@ -53,7 +53,7 @@ public class GoogleTest {
 		WebElement search = driver.findElement(By.name("q"));
 		Actions action = new Actions(driver);
 		action.click(search).sendKeys(searchText).build().perform();
-		Thread.sleep(Duration.ofSeconds(3));
+		//Thread.sleep(Duration.ofSeconds(3));
 		action.moveToElement(search).sendKeys(Keys.ENTER).build().perform();
 		//driver.findElement(By.cssSelector("button[aria-label='Search']")).click();
 		driver.findElement(By.cssSelector("div[data-pla='1'] div[data-pla-slot-pos='1']")).click();
