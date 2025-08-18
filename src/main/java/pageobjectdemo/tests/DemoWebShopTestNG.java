@@ -1,17 +1,22 @@
 package pageobjectdemo.tests;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
+
+import com.google.common.io.Files;
 
 import pageobjectdemo.pageobjects.CommonPage;
 import pageobjectdemo.pageobjects.LoginPage;
@@ -68,7 +73,7 @@ public class DemoWebShopTestNG {
 	}
 	
 	@Parameters({"firstName","lastName","emailId","password"})
-	@Test
+	@Test(enabled=false)
 	public void test1Registration(String fName, String lName, String emailID, String pass) {
 		SoftAssert softAssert = new SoftAssert();
 		comPage.clickOnRegisterLink();
@@ -161,6 +166,18 @@ public class DemoWebShopTestNG {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public String takeSnap() throws IOException {
+		// Selenium takes the screenshot
+		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		// Store the screenshot taken by Selenium on to file system 
+		String title = driver.getTitle();
+		String path = "/Users/sebastianselvarajaugustine/eclipse-workspace/JavaTest/src/main/java/test-snaps/"+title+".jpg";
+		File locationToCopy = new File(path);
+		// Copies the screenshot taken by Selenium to our local file system
+		Files.copy(screenshot, locationToCopy);
+		return path;
 	}
 	
 

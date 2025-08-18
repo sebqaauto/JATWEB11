@@ -8,9 +8,9 @@
 <parameter name="userName" value="Yuvi"></parameter>
 <parameter name="firstName" value="FirstName2518"></parameter>
 <parameter name="lastName" value="LastName2518"></parameter>
-<parameter name="emailId" value="FirstName2518.lastname@test.com"></parameter>
+<parameter name="emailId" value="FirstName2519.lastname@test.com"></parameter>
 <parameter name="password" value="lastname@test.com"></parameter>
-  <test thread-count="5" parallel="tests" name="DemoWebTest">
+  <test thread-count="1" parallel="tests" name="DemoWebTest">
     <classes>
       <class name="pageobjectdemo.tests.DemoWebShopTestNG"/>
     </classes>
